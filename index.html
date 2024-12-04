@@ -7,26 +7,120 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Registrace</title>
 </head>
-<body>
-<h2>Get started</h2>
-<p>creat your account now</p>
+<body style="background: grey; display: flex; justify-content: center; align-items: center; padding: 50px">
 
-<form action="index.html" method="post"></form>
 
-<label for="name" style="display: block; text-align: center">Full name</label>
-<br>
-<input type="text" id="name" name="name" placeholder="Your name.." style="border: gray 1px solid; border-radius: 5px; display: block; margin-top: 0px; margin-left: auto; width: auto; margin-right: auto;">
+<form action="index.html" method="post"
+      style="display: block;background: white; padding: 30px; border-radius: 8px; width: 300px;height: 950px ; text-align: center">
 
-<br>
+    <h2 style="font-family: 'Arial'">Get started</h2>
+    <p style="font-family: 'Arial'">Creat your account now</p>
+    <label for="name">Full name</label>
+    <br>
+    <input type="text" id="name" name="name" max="120" required placeholder="Your name..">
+    <br>
+    <label for="email">Email</label>
+    <br>
+    <input type="email" id="email" name="email" required placeholder="Your email..">
+    <br>
+    <label for="favorite-day">Favorite day</label>
+    <select id="favorite-day" name="favorite-day">
+        <optgroup label="work days">
+            <option value="1">Monday</option>
+            <option value="2">Tuesday</option>
+            <option value="3">Wednesday</option>
+            <option value="4">Thursday</option>
+            <option value="5">Friday</option>
+        </optgroup>
 
-<label for="email">Email</label>
-<br>
-<input type="text" id="email" name="em  ail" placeholder="Your email..">
+        <optgroup label="weekend">
+            <option value="6">Saturday</option>
+            <option value="7">Sunday</option>
+        </optgroup>
 
-<br>
+    </select>
+    <br>
+    <label for="age">Type your age</label>
+    <br>
+    <input type="number" id="age" name="number" min="0" max="120" required placeholder="Your age..">
+    <br>
+    <label for="color">Chose your favorite color</label>
+    <br>
+    <input type="color" id="color" name="color">
+    <br>
+    <label for="password">Password</label>
+    <br>
+    <input type="password" id="password" name="password" minlength="8" required placeholder="Your password..">
+    <br>
+    <label for="repeate pasword">Confirm your pasword</label>
+    <br>
+    <input type="password" id="repeate pasword" name="repeate password" minlength="8" required placeholder="Your password..">
+    <br>
+    <label class="jiný" for="checkbox">I agree to the terms of registration</label>
+    <input class="jiný" type="checkbox" name="checkbox" id="checkbox">
 
-<label for="password">Password</label>
-<br>
-<input type="password" id="password" name="password" placeholder="Your password..">
+    <button type="submit">Sing up</button>
+
+    <div>
+        <p style="font-family: 'Arial'">Already have an account? <a href="login.html">Log in</a></p>
+    </div>
+
+
+</form>
+
+<style>
+    label {
+        display: block;
+        margin: 10px 0 5px;
+        text-align: left;
+        font-family: "Arial Black", Gadget, sans-serif;
+        color: #636363;
+    }
+    label:hover {
+        cursor: pointer;
+    }
+    .jiný {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial;
+        color: black;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+        align-items: center;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+        align-items: center;
+        background-color: blue;
+        color: white;
+        cursor: pointer;
+    }
+</style>
+
+
 </body>
 </html>
